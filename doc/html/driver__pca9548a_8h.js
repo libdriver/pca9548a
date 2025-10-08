@@ -1,0 +1,57 @@
+var driver__pca9548a_8h =
+[
+    [ "DRIVER_PCA9548A_LINK_DEBUG_PRINT", "group__pca9548a__link__driver.html#gac140d8a3320c20a167b7182e5c8839b7", null ],
+    [ "DRIVER_PCA9548A_LINK_DELAY_MS", "group__pca9548a__link__driver.html#gabb64b1cf2ad5c7897b77b7cb2f7a7f0c", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_DEINIT", "group__pca9548a__link__driver.html#gac1a43cc409d9c3f5f5ff061eda866991", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_INIT", "group__pca9548a__link__driver.html#gac4d97d4dbc79793d8625443426b12de5", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_READ", "group__pca9548a__link__driver.html#ga2b509d513015a4e25f40704336f7e152", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_READ_ADDRESS16", "group__pca9548a__link__driver.html#ga8b468edea7ca93e81d0d5ceb8e7ff917", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_READ_COMMAND", "group__pca9548a__link__driver.html#ga95d132c21e267356ce218b7beaaea5f4", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_WRITE", "group__pca9548a__link__driver.html#ga87b1781ee72952aedd122ccafd8683d4", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_WRITE_ADDRESS16", "group__pca9548a__link__driver.html#gaa579297c8ce1cf6d0add18f22d054ce2", null ],
+    [ "DRIVER_PCA9548A_LINK_IIC_WRITE_COMMAND", "group__pca9548a__link__driver.html#gafa10b1694a2c041bd19497b48d523edc", null ],
+    [ "DRIVER_PCA9548A_LINK_INIT", "group__pca9548a__link__driver.html#gabb39dc22cac03256d42f91b6cfd17e05", null ],
+    [ "DRIVER_PCA9548A_LINK_RESET_GPIO_DEINIT", "group__pca9548a__link__driver.html#gaa6c93b0b747c8a2db0321e49a8a9643d", null ],
+    [ "DRIVER_PCA9548A_LINK_RESET_GPIO_INIT", "group__pca9548a__link__driver.html#gae26b95b6c174a06fe4b8d0239de57c60", null ],
+    [ "DRIVER_PCA9548A_LINK_RESET_GPIO_WRITE", "group__pca9548a__link__driver.html#ga5b0921796e5109e33ac0d7d712bdb5c1", null ],
+    [ "pca9548a_handle_t", "group__pca9548a__base__driver.html#gaf352cb2c7387a588c6eaee50ca76fe0b", null ],
+    [ "pca9548a_info_t", "group__pca9548a__base__driver.html#gac582998ec1c4c83fe804e6d98bc526bb", null ],
+    [ "pca9548a_address_t", "group__pca9548a__base__driver.html#gab5218e37390464f35b91275b4cf0a493", [
+      [ "PCA9548A_ADDRESS_A000", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493ad6fd93fbcf0f0ead8a277424c58c0f11", null ],
+      [ "PCA9548A_ADDRESS_A001", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493a47cde9d51b7a237facfdc65024038935", null ],
+      [ "PCA9548A_ADDRESS_A010", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493ae74e5bfe1f22ef13cd2e5095e1d53e03", null ],
+      [ "PCA9548A_ADDRESS_A011", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493ad67f447990b51290512b8909ad50fff6", null ],
+      [ "PCA9548A_ADDRESS_A100", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493a0fe03fa2df611470b2086d25c3ff267a", null ],
+      [ "PCA9548A_ADDRESS_A101", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493aa3293586bed976edc03510e90e64a18e", null ],
+      [ "PCA9548A_ADDRESS_A110", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493a74746f2fa5d9ade4124cdf022fa6b1c9", null ],
+      [ "PCA9548A_ADDRESS_A111", "group__pca9548a__base__driver.html#ggab5218e37390464f35b91275b4cf0a493aab88a9905847fc73977ddc44e6f17fdc", null ]
+    ] ],
+    [ "pca9548a_bool_t", "group__pca9548a__base__driver.html#gaca3a5db6c00df44a4d65f72e1e756767", [
+      [ "PCA9548A_BOOL_FALSE", "group__pca9548a__base__driver.html#ggaca3a5db6c00df44a4d65f72e1e756767add69f6269fa410c2c8d0ad8d6c3afd4d", null ],
+      [ "PCA9548A_BOOL_TRUE", "group__pca9548a__base__driver.html#ggaca3a5db6c00df44a4d65f72e1e756767ae6fb0d19dcfecf167c4b82f73f8e50c3", null ]
+    ] ],
+    [ "pca9548a_channel_t", "group__pca9548a__base__driver.html#ga780880f8987fde55c35ba61eac6c8786", [
+      [ "PCA9548A_CHANNEL_0", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786a086f8bcfb35819351b4fb4366fea1c38", null ],
+      [ "PCA9548A_CHANNEL_1", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786a248e598b211ab7ddd09203f0642fcb7e", null ],
+      [ "PCA9548A_CHANNEL_2", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786a42e7d4a56603f773ee0aeafe1ca646d3", null ],
+      [ "PCA9548A_CHANNEL_3", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786a75cfd67c7b5b4fd1f029bf3d5d84dca3", null ],
+      [ "PCA9548A_CHANNEL_4", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786aaa6c4a0977edc7e6ebbc62951094bf11", null ],
+      [ "PCA9548A_CHANNEL_5", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786ab7be118e65d646cf959be6f515446aaf", null ],
+      [ "PCA9548A_CHANNEL_6", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786acc3796cd691988b38678006c1ccd0c7d", null ],
+      [ "PCA9548A_CHANNEL_7", "group__pca9548a__base__driver.html#gga780880f8987fde55c35ba61eac6c8786a8b92b7c930f70ef91fa0b77e99916a0b", null ]
+    ] ],
+    [ "pca9548a_deinit", "group__pca9548a__base__driver.html#gae7c23e042384c1c810435abd39e88ea8", null ],
+    [ "pca9548a_get_addr_pin", "group__pca9548a__base__driver.html#ga6262c433b12b71cbd496e22169894575", null ],
+    [ "pca9548a_get_channel", "group__pca9548a__base__driver.html#ga039543944fc71f571c1190703894d770", null ],
+    [ "pca9548a_iic_read", "group__pca9548a__base__driver.html#gafe5b6afa471876fc9e006204cf6630b4", null ],
+    [ "pca9548a_iic_read_address16", "group__pca9548a__base__driver.html#ga2dde398b60c9e89aef2af8910f6fbf7d", null ],
+    [ "pca9548a_iic_read_command", "group__pca9548a__base__driver.html#ga4c6ae496f1a55b469aaa45b403172373", null ],
+    [ "pca9548a_iic_write", "group__pca9548a__base__driver.html#ga8840c813272d39b7fce51997b5ada629", null ],
+    [ "pca9548a_iic_write_address16", "group__pca9548a__base__driver.html#ga6d8ab5a8dc7d2c6f2adc72c6f5455493", null ],
+    [ "pca9548a_iic_write_command", "group__pca9548a__base__driver.html#gabc4f3ab6fd534ad5df313fc589518e2c", null ],
+    [ "pca9548a_info", "group__pca9548a__base__driver.html#gadb4729708fcdd3f9cc060f39be2a1f6b", null ],
+    [ "pca9548a_init", "group__pca9548a__base__driver.html#ga3f7d3bfaa5d4b690ba580e0592888b5d", null ],
+    [ "pca9548a_reset_bus", "group__pca9548a__base__driver.html#ga52fa32b57ff9178cbb8e76edac96bdc4", null ],
+    [ "pca9548a_set_addr_pin", "group__pca9548a__base__driver.html#gabac2125c0453225301b6c193959abd76", null ],
+    [ "pca9548a_set_channel", "group__pca9548a__base__driver.html#ga1c5e058f10894e46cc7b3ee3e26eab67", null ]
+];
