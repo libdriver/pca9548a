@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['debug_5fprint_3',['debug_print',['../structpca9548a__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b',1,'pca9548a_handle_s']]],
-  ['delay_5fms_4',['delay_ms',['../structpca9548a__handle__s.html#a406c9433252b7366de417b7a60915c81',1,'pca9548a_handle_s']]],
-  ['driver_5fpca9548a_2ec_5',['driver_pca9548a.c',['../driver__pca9548a_8c.html',1,'']]],
-  ['driver_5fpca9548a_2eh_6',['driver_pca9548a.h',['../driver__pca9548a_8h.html',1,'']]],
-  ['driver_5fpca9548a_5fbasic_2ec_7',['driver_pca9548a_basic.c',['../driver__pca9548a__basic_8c.html',1,'']]],
-  ['driver_5fpca9548a_5fbasic_2eh_8',['driver_pca9548a_basic.h',['../driver__pca9548a__basic_8h.html',1,'']]],
-  ['driver_5fpca9548a_5finterface_2eh_9',['driver_pca9548a_interface.h',['../driver__pca9548a__interface_8h.html',1,'']]],
-  ['driver_5fpca9548a_5finterface_5ftemplate_2ec_10',['driver_pca9548a_interface_template.c',['../driver__pca9548a__interface__template_8c.html',1,'']]],
-  ['driver_5fpca9548a_5flink_5fdebug_5fprint_11',['DRIVER_PCA9548A_LINK_DEBUG_PRINT',['../group__pca9548a__link__driver.html#gac140d8a3320c20a167b7182e5c8839b7',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fdelay_5fms_12',['DRIVER_PCA9548A_LINK_DELAY_MS',['../group__pca9548a__link__driver.html#gabb64b1cf2ad5c7897b77b7cb2f7a7f0c',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fdeinit_13',['DRIVER_PCA9548A_LINK_IIC_DEINIT',['../group__pca9548a__link__driver.html#gac1a43cc409d9c3f5f5ff061eda866991',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5finit_14',['DRIVER_PCA9548A_LINK_IIC_INIT',['../group__pca9548a__link__driver.html#gac4d97d4dbc79793d8625443426b12de5',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fread_15',['DRIVER_PCA9548A_LINK_IIC_READ',['../group__pca9548a__link__driver.html#ga2b509d513015a4e25f40704336f7e152',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fread_5faddress16_16',['DRIVER_PCA9548A_LINK_IIC_READ_ADDRESS16',['../group__pca9548a__link__driver.html#ga8b468edea7ca93e81d0d5ceb8e7ff917',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fread_5fcommand_17',['DRIVER_PCA9548A_LINK_IIC_READ_COMMAND',['../group__pca9548a__link__driver.html#ga95d132c21e267356ce218b7beaaea5f4',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fwrite_18',['DRIVER_PCA9548A_LINK_IIC_WRITE',['../group__pca9548a__link__driver.html#ga87b1781ee72952aedd122ccafd8683d4',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fwrite_5faddress16_19',['DRIVER_PCA9548A_LINK_IIC_WRITE_ADDRESS16',['../group__pca9548a__link__driver.html#gaa579297c8ce1cf6d0add18f22d054ce2',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5fiic_5fwrite_5fcommand_20',['DRIVER_PCA9548A_LINK_IIC_WRITE_COMMAND',['../group__pca9548a__link__driver.html#gafa10b1694a2c041bd19497b48d523edc',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5finit_21',['DRIVER_PCA9548A_LINK_INIT',['../group__pca9548a__link__driver.html#gabb39dc22cac03256d42f91b6cfd17e05',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5freset_5fgpio_5fdeinit_22',['DRIVER_PCA9548A_LINK_RESET_GPIO_DEINIT',['../group__pca9548a__link__driver.html#gaa6c93b0b747c8a2db0321e49a8a9643d',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5freset_5fgpio_5finit_23',['DRIVER_PCA9548A_LINK_RESET_GPIO_INIT',['../group__pca9548a__link__driver.html#gae26b95b6c174a06fe4b8d0239de57c60',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5flink_5freset_5fgpio_5fwrite_24',['DRIVER_PCA9548A_LINK_RESET_GPIO_WRITE',['../group__pca9548a__link__driver.html#ga5b0921796e5109e33ac0d7d712bdb5c1',1,'driver_pca9548a.h']]],
-  ['driver_5fpca9548a_5fregister_5ftest_2ec_25',['driver_pca9548a_register_test.c',['../driver__pca9548a__register__test_8c.html',1,'']]],
-  ['driver_5fpca9548a_5fregister_5ftest_2eh_26',['driver_pca9548a_register_test.h',['../driver__pca9548a__register__test_8h.html',1,'']]],
-  ['driver_5fversion_27',['driver_version',['../structpca9548a__info__s.html#a41b0bd442708b70d252c50b92c75265a',1,'pca9548a_info_s']]],
-  ['driver_5fversion_28',['DRIVER_VERSION',['../driver__pca9548a_8c.html#ae578001fe043b4cca7a0edd801cfe9c4',1,'driver_pca9548a.c']]]
+  ['channel_0',['channel',['../structpca9548a__handle__s.html#a715f5cb061d11eb75981741eda4dafcd',1,'pca9548a_handle_s']]],
+  ['chip_5fname_1',['CHIP_NAME',['../driver__pca9548a_8c.html#adc9da0a24824ca1239b593f6459b3954',1,'driver_pca9548a.c']]],
+  ['chip_5fname_2',['chip_name',['../structpca9548a__info__s.html#af890958c72bd715cc6454a10dc846ae6',1,'pca9548a_info_s']]]
 ];
