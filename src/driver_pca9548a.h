@@ -348,6 +348,7 @@ uint8_t pca9548a_set_channel(pca9548a_handle_t *handle, pca9548a_channel_t chann
  * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
+ *             - 1 get channel failed
  *             - 2 handle is NULL
  *             - 3 handle is not initialized
  * @note       none
