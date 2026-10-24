@@ -320,6 +320,7 @@ uint8_t pca9548a_reset_bus(pca9548a_handle_t *handle)
         return 1;                                                           /* return error */
     }
     handle->delay_ms(2);                                                    /* delay 2ms */
+    handle->channel = 0x00;                                                 /* reset deselected all channels, sync mirror */
     
     return 0;                                                               /* success return 0 */
 }
@@ -338,25 +339,28 @@ uint8_t pca9548a_reset_bus(pca9548a_handle_t *handle)
  */
 uint8_t pca9548a_set_channel(pca9548a_handle_t *handle, pca9548a_channel_t channel, pca9548a_bool_t enable)
 {
-    if (handle == NULL)                                                                      /* check handle */
+    uint8_t reg;
+
+    if (handle == NULL)                                               /* check handle */
     {
-        return 2;                                                                            /* return error */
+        return 2;                                                     /* return error */
     }
-    if (handle->inited != 1)                                                                 /* check handle initialization */
+    if (handle->inited != 1)                                          /* check handle initialization */
     {
-        return 3;                                                                            /* return error */
+        return 3;                                                     /* return error */
     }
-    
-    handle->channel &= ~(1 << channel);                                                      /* clear channel */
-    handle->channel |= enable << channel;                                                    /* set channel */
-    if (handle->iic_write_cmd(handle->iic_addr, (uint8_t *)&handle->channel, 1) != 0)        /* write channel config */
+
+    reg = (uint8_t)(handle->channel & ~(1 << channel));               /* clear target channel */
+    reg |= (uint8_t)(enable << channel);                              /* set target channel */
+    if (handle->iic_write_cmd(handle->iic_addr, &reg, 1) != 0)        /* write channel config */
     {
-        handle->debug_print("pca9548a: set channel failed.\n");                              /* set channel failed */
-        
-        return 1;                                                                            /* return error */
+        handle->debug_print("pca9548a: set channel failed.\n");       /* set channel failed */
+
+        return 1;                                                     /* return error */
     }
-    
-    return 0;                                                                                /* success return 0 */
+    handle->channel = reg;                                            /* update mirror only after success */
+
+    return 0;                                                         /* success return 0 */
 }
 
 /**
@@ -366,24 +370,34 @@ uint8_t pca9548a_set_channel(pca9548a_handle_t *handle, pca9548a_channel_t chann
  * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
+ *             - 1 get channel failed
  *             - 2 handle is NULL
  *             - 3 handle is not initialized
  * @note       none
  */
 uint8_t pca9548a_get_channel(pca9548a_handle_t *handle, pca9548a_channel_t channel, pca9548a_bool_t *enable)
 {
-    if (handle == NULL)                                                      /* check handle */
+    uint8_t reg;
+
+    if (handle == NULL)                                                /* check handle */
     {
-        return 2;                                                            /* return error */
+        return 2;                                                      /* return error */
     }
-    if (handle->inited != 1)                                                 /* check handle initialization */
+    if (handle->inited != 1)                                           /* check handle initialization */
     {
-        return 3;                                                            /* return error */
+        return 3;                                                      /* return error */
     }
-    
-    *enable = (pca9548a_bool_t)((handle->channel >> channel) & 0x01);        /* set channel */
-    
-    return 0;                                                                /* success return 0 */
+
+    if (handle->iic_read_cmd(handle->iic_addr, &reg, 1) != 0)          /* read control register */
+    {
+        handle->debug_print("pca9548a: get channel failed.\n");        /* get channel failed */
+
+        return 1;                                                      /* return error */
+    }
+    handle->channel = reg;                                             /* sync mirror with hardware */
+    *enable = (pca9548a_bool_t)((reg >> channel) & 0x01);              /* extract target channel status */
+
+    return 0;                                                          /* success return 0 */
 }
 
 /**
